@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "strict": true,
+    "target": "es5",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "noImplicitAny": false,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+  ],
+  "types": [
+    "typePatches"
+  ]
+}

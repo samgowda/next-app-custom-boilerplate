@@ -1,0 +1,70 @@
+/*
+ * Colors
+ */
+const WHITE = '#ffffff';
+const BLACK = '#000000';
+const GRAY = '#c5c7c8';
+const LIGHT_GRAY = '#f8f8f6';
+const DARK_NAVY = '#303e47';
+const LIGHT_NAVY = '#f4f5f6';
+const GREEN = '#42f47a';
+const ERROR_RED = '#ff2d44';
+
+/*
+ * Fonts
+ */
+const PRIMARY_FONT_FAMILY = '"Avenir"';
+const PRIMARY_LIGHT = '"Avenir"';
+const PRIMARY_REGULAR = '"Avenir"';
+const PRIMARY_MEDIUM = '"AvenirNext-DemiBold"';
+const PRIMARY_BOLD = '"AvenirNext-DemiBold"';
+const PRIMARY_TEXT_SIZE = 16;
+
+export const COLORS = {
+  PRIMARY: GREEN,
+  SECONDARY: DARK_NAVY,
+  BLACK,
+  DARK_NAVY,
+  ERROR_RED,
+  GRAY,
+  GREEN,
+  LIGHT_GRAY,
+  LIGHT_NAVY,
+  WHITE,
+
+  BODY: LIGHT_GRAY,
+  HEADER: WHITE,
+  CONTENT: LIGHT_GRAY,
+  PRIMARY_TEXT_COLOR: DARK_NAVY,
+  PRIMARY_ACTIVE_COLOR: GREEN,
+
+  PRIMARY_CTA_BACKGROUND_COLOR: GREEN,
+  PRIMARY_CTA_BORDER_COLOR: GREEN,
+  PRIMARY_CTA_TEXT_COLOR: WHITE,
+};
+
+export const LAYOUT = {
+  HEADERHEIGHT: 90,
+  MOBILE_HEADERHEIGHT: 58,
+  MAXWIDTH: 1280,
+  GUTTER: 20,
+  H_SPACING: 50,
+};
+
+export const FONTS = {
+  PRIMARY_FONT_FAMILY,
+  PRIMARY_TEXT_SIZE,
+
+  PRIMARY: PRIMARY_FONT_FAMILY,
+  PRIMARY_LIGHT,
+  PRIMARY_REGULAR,
+  PRIMARY_MEDIUM,
+  PRIMARY_BOLD,
+};
+
+export const ORDER = {
+  TOAST: 8,
+  LOADING: 7,
+  SKIP_TO_CONTENT: 6,
+  HEADER: 5,
+};

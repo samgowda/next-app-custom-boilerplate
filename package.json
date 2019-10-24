@@ -1,0 +1,57 @@
+{
+  "name": "sample-next-web-app",
+  "license": "UNLICENSED",
+  "engines": {
+    "npm": ">=5",
+    "node": "8.11.3"
+  },
+  "scripts": {
+    "start": "concurrently \"tsc --pretty --watch\" \"next dist\"",
+    "dev": "concurrently \"tsc --pretty --watch\" \"next dist\"",   
+    "prebuild": "tsc",
+    "startNext": "next start dist",
+    "build": "next build dist",
+    "predev": "cp -R static dist/",
+    "postinstall": "tsc",
+    "compile": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint-staged": "npm run tslint"
+  },
+  "lint-staged": {
+    "*(.ts|.tsx)": "tslint"
+  },
+  "pre-commit": "tslint-staged",
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.44",
+    "@types/lodash": "^4.14.117",
+    "@zeit/next-typescript": "^1.1.1",
+    "axios": "^0.17.1",
+    "babel-plugin-styled-components": "^1.8.0",
+    "lodash": "^4.17.11",
+    "next": "^4.2.1",
+    "next-redux-saga": "^1.0.1",
+    "next-redux-wrapper": "^1.3.5",
+    "next-routes": "^1.2.0",
+    "polished": "^2.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-redux-loading-bar": "^3.1.1",
+    "redux": "4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-saga": "^0.16.0",
+    "styled-components": "2.4.0",
+    "styled-normalize": "^8.0.2",
+    "typescript": "2.8.3"
+  },
+  "devDependencies": {
+    "@types/next": "^2.4.6",
+    "@types/next-redux-wrapper": "^1.3.6",
+    "@types/react": "^16.0.28",
+    "@types/react-redux": "^5.0.14",
+    "@types/redux": "^3.6.0",
+    "concurrently": "^3.5.1",
+    "fsevents": "1.2.4",
+    "tslint": "^5.8.0"
+  }
+}
