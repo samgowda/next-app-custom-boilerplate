@@ -62,7 +62,7 @@ run jest from the root of the project.  Tests live in the `test/` directory of e
 ## Styling
 
 `Next` supports universal styles with [styled-components](https://www.styled-components.com/). Styles are "mobile-first."
-The required styles for the first render are served within the HTML and the rest are loaded in the client to avoid any FOUCs. For this purpose I am extending the `<_document />` and injecting the server side rendered styles into the <head>. 
+The required styles for the first render are served within the HTML and the rest are loaded in the client to avoid any FOUCs. For this purpose I am extending the `<_document />` and injecting the server side rendered styles into the `<head>`. 
   
 
 ## Bootstrap Skeleton
