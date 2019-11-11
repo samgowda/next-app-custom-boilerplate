@@ -44,7 +44,7 @@ The `./static` directory maps to `/static` in the `next` server, so you can put 
 
 ## Data Flow
 
-For large React/Redux applications (this currently simple app was built with the assumption it will scale) the data flow can become increasingly complex and convoluted. To help minimize this complexity here is a diagram of the client side data flow for this project:
+For large React/Redux applications the data flow can become increasingly complex and convoluted. Here is a diagram of the client side data flow for this project:
 
 ![data flow diagram](./static/img/app_data_flow_diagram.png)
 
@@ -55,7 +55,7 @@ All actions that require some type of asynchronous code (e.g. network requests) 
 
 This project makes use of unit testing to verify code is properly used. 
 
-For unit testing, I use [Jest](https://facebook.github.io/jest/docs/en/tutorial-react.html). To run unit tests,
+For unit testing use [Jest](https://facebook.github.io/jest/docs/en/tutorial-react.html). To run unit tests,
 run jest from the root of the project.  Tests live in the `test/` directory of every feature folder.
 
 
@@ -71,14 +71,3 @@ This project was bootstrapped with [Create Next App](https://github.com/segmenti
 
 Find the most recent version of this guide at [here](https://github.com/segmentio/create-next-app/blob/master/lib/templates/default/README.md). And check out [Next.js repo](https://github.com/zeit/next.js) for the most up-to-date info.
 
-
-## Deployment
-
-TBD
-
-
-## Future Updates
-
-- Refactor state to use "selectors". The [Reselect](https://github.com/reactjs/reselect) library is used for components to "memoize" the Redux state and avoid constantly re-fetching when the Redux state has not changed. The "selectors" are injected before the Redux state is mapped to the component props.
-
-- Localization. The [react-intl](https://github.com/yahoo/react-intl) library helps manage localization. All text should be displayed through a `<FormattedMessage >` component so that it can dynamically change when the locale changes.# next-app-custom-boilerplate
